@@ -17,7 +17,7 @@ def index(request):
 def candidate_detail(request, votes_id):
     cands = {}
     cands['candidate'] = Candidate.objects.get(id=votes_id)
-    return render(request, 'detail.html', content)
+    return render(request, 'detail.html', cands)
 
 
 def candidate_create(request):

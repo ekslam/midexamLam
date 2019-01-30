@@ -25,7 +25,9 @@
           <span class = "card-title">{{ a.lastname }}, {{ a.firstname }}</span>
           <p>Position:</p> <br/>
         </div>
-
+        <div class = "card-action">
+          <a href="{% url 'votes:detail' a.id %}">Detail Page</a>
+        </div>
       </div>
     </div>
   </div>
